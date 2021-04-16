@@ -1,0 +1,82 @@
+div{
+  font-size: 20px;
+}
+.orange~li{
+  color: orange;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+
+.box:focus{
+  width: 300px;
+  background-color: rosybrown;
+}
+input:focus{
+  background-color: red;
+  border-color: red
+}
+
+.fruits *:not(input){
+  color: blue;
+}
+
+/* 가상요소 선택자  */
+.box::before{
+  content: 'before';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: skyblue;
+}
+.box::after{
+  content: 'afterf';
+}
+
+[disabled]{
+ color: aquamarine; 
+}
+[type='password']{
+  color: red;
+}
+
+.parent{
+  width: 300px;
+  height: 400px;
+  background-color: red;
+}
+
+.child{
+  width: 100px;
+  height: inherit;
+  background-color: orange;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+}
+.hello{
+  color: skyblue;
+}
+.hello{
+  color: blue !important;
+}
+/* 0점 */
+*{ 
+
+}
+/* 1점 */
+div{
+
+}
+/* 10점 */
+.hello{
+
+}
+/* 100점 */
+#hellow{
+
+}
